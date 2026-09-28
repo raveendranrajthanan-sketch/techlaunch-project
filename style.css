@@ -70,13 +70,22 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
 }
 
-p {
-    font-size: 32px;
-    line-height: 1.2;
-    color: #555;
-    font-family: 'Times New Roman', Times, serif;
-}
 
+p {
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 15px 20px;
+
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+
+    color: #444;
+    text-align: justify;
+
+    transition: 0.3s ease;
+}
 img {
     width: 100%;
     max-width: 600px;
@@ -94,6 +103,41 @@ footer {
     padding: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+#more-button {
+    display: block;
+    margin: 20px auto;
+
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+
+    background: linear-gradient(135deg, #198754, #20c997);
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s ease;
+}
+
+#more-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#more-button:active {
+    transform: translateY(0);
+}
+
+#more-button:focus {
+    outline: 3px solid rgba(32, 201, 151, 0.4);
+    outline-offset: 3px;
 }
 
 footer p {
