@@ -44,3 +44,34 @@ back to "Show more".
 The interaction can be operated using the keyboard.
 The button can be reached using the Tab key and
 activated using Enter or Space.
+
+## Form rules
+
+### Name
+- Required field
+- Must not be empty
+- Spaces-only input is not allowed
+
+### Email
+- Required field
+- Must be a valid email address
+
+### Message
+- Required field
+- Must contain at least 10 characters
+
+## Form test cases
+
+| # | Input                           | Expected          | Pass |
+|---|---------------------------------|-------------------|------|
+| 1 | Empty name                      | Name message      | Yes  |
+| 2 | Name " "                        | Name message      | Yes  |
+| 3 | Email `raju@`                   | Email message     | Yes  |
+| 4 | Valid name + email + message    | Thank-you message | Yes  |
+| 5 | Message less than 10 characters | Message error     | Yes  |
+| 6 | Show More using keyboard        | Text shows/hides  | Yes  |
+
+## Next improvements
+1. Improve the visual design and responsiveness of the website.
+2. Add more interactive features for users.
+3. Improve form feedback and accessibility.

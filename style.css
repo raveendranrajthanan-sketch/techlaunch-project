@@ -105,6 +105,8 @@ footer {
     margin-bottom: 30px;
 }
 
+/*------------show more button-------------*/
+
 #more-button {
     display: block;
     margin: 20px auto;
@@ -139,6 +141,139 @@ footer {
     outline: 3px solid rgba(32, 201, 151, 0.4);
     outline-offset: 3px;
 }
+
+/*-----------Join Form---------------------------------------------- */
+
+
+#join {
+    padding: 70px 20px;
+}
+
+#join h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 12px;
+    color: #222;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+#join-form {
+    max-width: 650px;
+    margin: 35px auto 0;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #e6e6e6;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+#join-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+#join-form input,
+#join-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 22px;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+    background: #fafafa;
+    color: #222;
+    font-size: 15px;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+#join-form input::placeholder,
+#join-form textarea::placeholder {
+    color: #999;
+}
+
+#join-form input:focus,
+#join-form textarea:focus {
+    outline: 3px solid rgba(255, 107, 53, 0.18);
+    border-color: #ff6b35;
+    background: #fff;
+    box-shadow: 0 0 0 1px #ff6b35;
+}
+
+#join-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+#join-form button {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #222, #444);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#join-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+#join-form button:focus-visible {
+    outline: 3px solid #ff6b35;
+    outline-offset: 4px;
+}
+
+
+#join-form button:active {
+    transform: translateY(0);
+}
+
+#form-message {
+    min-height: 24px;
+    margin: 18px 0 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Mobile Responsive */
+/*
+@media (max-width: 600px) {
+
+    #join {
+        padding: 45px 15px;
+    }
+
+    #join h2 {
+        font-size: 28px;
+    }
+
+    #join-form {
+        padding: 25px 20px;
+        border-radius: 14px;
+    }
+
+    #join-form input,
+    #join-form textarea {
+        font-size: 16px;
+        padding: 13px 14px;
+    }
+
+    #join-form button {
+        padding: 13px;
+    }
+}*/
 
 footer p {
     font-family: 'Times New Roman', Times, serif;

@@ -18,3 +18,45 @@ button.addEventListener("click", function () {
     }
 
 });
+
+
+// ----------------------------------------FORM VALIDATION----------------------------------------//
+
+
+const form = document.querySelector("#join-form");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const messageInput = document.querySelector("#message");
+const formMessage = document.querySelector("#form-message");
+
+form.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const name = nameInput.value.trim();
+    const message = messageInput.value.trim();
+
+    if (name === "") {
+        formMessage.textContent = "Please enter your name.";
+        nameInput.focus();
+        return;
+    }
+
+    if (!emailInput.checkValidity()) {
+        formMessage.textContent = "Please enter a valid email address.";
+        emailInput.focus();
+        return;
+    }
+
+    if (message.length < 10) {
+        formMessage.textContent =
+            "Please write at minimum 10 characters in your message.";
+        messageInput.focus();
+        return;
+    }
+  
+    formMessage.textContent =
+        "Thanks, " + name + "! Your message has been received.";
+
+    form.reset();
+});
